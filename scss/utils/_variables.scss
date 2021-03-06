@@ -1,17 +1,16 @@
-:root {
-    --main-color: #212121;
-    --logo-color: #000000;
-    --accent-color: #2196f3;
-    --background-dark-color: #2f303a;
-    --background-light-color: #F5F4FA;
-    --active-color: #FFFFFF;
-    --inactive-color: #757575;
-    --border-color: #EEEEEE;
-    --portfolio-border-color: #ECECEC;
-   }
-   body {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-   }
+$primary-text-color: #757575;
+$white-color: #ffffff;
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$title-tex-color: #212121;
+$link-footer: rgba(255, 255, 255, 0.6);
+$accent-color: #2196f3;
+$ark-fone: #2f303a;
+$bleak-color: #000000;
+$background-color-section: #f5f4fa;
+$fill-icon: #afb1b8;
+$border-portfolio: #eeeeee;
+$border-header: #ececec;
+$background-overley: rgba(47, 48, 58, 0.4);
+$dark-background-button: #188ce8;
+$plaseholder-color: rgba(117, 117, 117, 0.5);
+$overley-portfolio: rgba(33, 150, 243, 0.9);
