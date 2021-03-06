@@ -1,0 +1,122 @@
+// .portfolio-item {
+//   position: relative;
+// }
+
+.overlay-portfolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background: $overley-portfolio;
+
+  transform: translateY(101%);
+  transition: transform $transition;
+
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translate(0);
+  }
+
+  & p {
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+    color: $white-color;
+  }
+}
+
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-portfolio {
+    justify-content: center;
+  }
+
+  .portfolio-item {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .overlay-container {
+    width: 354px;
+  }
+  .portfolio-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay-container {
+    width: 370px;
+  }
+  .portfolio-item {
+    width: 370px;
+  }
+
+  // .portfolio-section {
+  //   padding-top: 94px;
+  // }
+}
+
+.portfolio-item {
+  max-width: 450px;
+  margin: 15px;
+}
+
+.overlay-container {
+  position: relative;
+  // height: 294px;
+  overflow: hidden;
+}
+
+.sabtitle-card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-tex-color;
+  margin-bottom: 6px;
+}
+
+.card-text-conteiner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-bottom: 1px solid $border-portfolio;
+  border-left: 1px solid $border-portfolio;
+  border-right: 1px solid $border-portfolio;
+  box-sizing: border-box;
+}
+
+.portfolio-link {
+  display: block;
+  height: auto;
+  width: 100%;
+
+  transition: box-shadow $transition;
+
+  &:hover,
+  &:focus {
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-increased-cfrd-conteiner {
+    height: 148px;
+  }
+
+  .portfolio-increased-cfrd {
+    height: 440px;
+  }
+}
