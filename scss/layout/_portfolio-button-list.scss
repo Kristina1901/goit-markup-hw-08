@@ -1,0 +1,53 @@
+.list-bottons-button {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  min-width: 73px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+  cursor: pointer;
+  background-color: $background-color-section;
+  color: $title-tex-color;
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.activ-button {
+  background-color: $accent-color;
+  color: $white-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.list-bottons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.list-bottons-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list-bottons-item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
