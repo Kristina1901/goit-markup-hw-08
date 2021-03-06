@@ -1,7 +1,13 @@
+/*utils*/
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+
+/*base*/
+// @import "./base/fonts";
 @import "./base/common";
 @import "./base/conteiner";
+
+/*components*/
 @import "./components/logo";
 @import "./components/button";
 @import "./components/padding-section";
@@ -9,6 +15,8 @@
 @import "./components/list-social-links";
 @import "./components/paragraph-card";
 @import "./components/center";
+
+/*layout*/
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/about-section";
