@@ -1,0 +1,93 @@
+.portfolio-photo {
+    padding-bottom: 94px;
+}
+.portfolio-photo-container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}
+.portfolio-gallery a {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color:var(--inactive-color);
+    display: block;
+    border: 1px solid #EEEEEE;
+    text-decoration: none;
+    }
+.portfolio-list {
+   display: flex;
+   padding: 0;
+   margin: 0;
+   flex-wrap: wrap;
+   margin-top: -30px;
+   margin-left: -30px;
+   list-style-type: none;
+   }
+.portfolio-gallery {
+   margin-top: 30px;
+   margin-left: 30px;
+   flex-basis: calc(100% / 3 - 30px);
+ }
+.portfolio-header {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color:var(--main-color);
+        margin-bottom: 4px;
+         }
+.portfolio-link {
+    width: 370px;
+    box-shadow: 0;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}  
+}
+.portfolio-gallery-container {
+  padding-right: 24px; 
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}  
+.technokryak-text {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--active-color);
+  }  
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+   }
+.technokryak {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 294px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: var(--accent-color);
+    transform: translatey(141%);
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-link:hover .technokryak {
+    transform: translatey(0);
+  }
+.portfolio-link:focus .technokryak {
+    transform: translatey(0);
+  }  
+.link-logo {
+    text-decoration: none;
+}
